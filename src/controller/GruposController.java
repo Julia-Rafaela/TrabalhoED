@@ -69,13 +69,13 @@ public class GruposController implements ActionListener {
 		grupo.Ra=textAreaRAGP.getText();
 		System.out.println(grupo);
 		
-		Cadastragrupos1(grupo.toString());
+		Cadastragrupos(grupo.toString());
 		
 	}
 
 
 
-	private void Cadastragrupos1(String csvGrupos) throws IOException {
+	private void Cadastragrupos(String csvGrupos) throws IOException {
 		 String path= System.getProperty ("user.home") + File.separator + "SistemaCadastro";
 			File dir= new File(path);
 			if(!dir.exists()) {
@@ -100,26 +100,5 @@ public class GruposController implements ActionListener {
 
 
 
-	private void Cadastragrupos(String csvGrupos) throws IOException {
-		String path= System.getProperty ("user.home") + File.separator + "SistemaCadastro";
-		File dir= new File(path);
-		if(!dir.exists()) {
-			dir.mkdir();
 
-		}
-		File arq= new File(path, "grupos.csv");
-		boolean existe=false;
-		if(arq.exists()) {
-			existe=true;
-		}
-		FileWriter fw= new FileWriter(arq, existe);
-
-		PrintWriter pw= new PrintWriter(fw);
-		pw.write(csvGrupos+"\r\n");
-		pw.flush();
-		pw.close();
-		fw.close();
-
-
-	}
 }

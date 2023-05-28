@@ -68,7 +68,7 @@ public class CosultaOrientacao implements ActionListener {
 			orientacao=buscaCodorientacao(orientacao.codOrientacao);	
 
 			if(orientacao!=null) {
-				textAreaConsultaOrientacao.setText(" Codigo Orientacao "+ orientacao.codOrientacao+ " Codigo Grupo " + orientacao.codigoGP+ "Titulo "+ orientacao.titulo+ " Descricao "+  orientacao.descricao);
+				textAreaConsultaOrientacao.setText(" Codigo Orientacao "+ orientacao.codOrientacao+ " Codigo Grupo " + orientacao.codigoGP+" Data = "+orientacao.data+ " Titulo "+ orientacao.titulo+ " Descricao "+  orientacao.descricao);
 			}
 
 
@@ -91,7 +91,7 @@ public class CosultaOrientacao implements ActionListener {
 		if(tamanhoLista>0) {
 			for( int i=0; i< tamanhoLista; i++) {
 				Orientacao O=(Orientacao) Orientacoes.get(i);
-				buffer.append(" Codigo Orientacao "+ O.codOrientacao+ " Codigo Grupo " + O.codigoGP+ "Titulo "+ O.titulo+ " Descricao "+  O.descricao+"\r\n");
+				buffer.append(" Codigo Orientacao "+ O.codOrientacao+ " Codigo Grupo " + O.codigoGP +"Data = "+ O.data+ "Titulo "+ O.titulo+ " Descricao "+  O.descricao+"\r\n");
 
 			}
 			TextArea.setText(buffer.toString());

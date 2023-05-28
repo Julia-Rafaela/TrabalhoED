@@ -70,7 +70,7 @@ public class OrientacaoController implements ActionListener {
 		textFieldCodOrientacao.setText("");
 		textFieldDataOrientacaoOrientacao.setText("");
 		textFieldTituloOrientacao.setText("");
-
+		TextArea.setText("");
 
 	}
 
