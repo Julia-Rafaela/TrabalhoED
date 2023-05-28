@@ -73,6 +73,7 @@ public class ControllerSubGP implements ActionListener {
 		
 		grupo=buscaGrupo(grupo);
 		
+		
 		if(grupo.codigo!= null) {
 			textAreaCS.setText("Codigo: "+ grupo.codigo+" - nome: "+grupo.nome +"- tema "+ grupo.tema+ "- area "+ grupo.area+ "- subarea"+ grupo.subarea+ "-data "+ grupo.data+ "- alunos "+ grupo.alunos+ "- Ra "+ grupo.Ra);
 		}else {

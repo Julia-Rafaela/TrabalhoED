@@ -70,7 +70,14 @@ public class GruposController implements ActionListener {
 		System.out.println(grupo);
 		
 		Cadastragrupos(grupo.toString());
-		
+		textFieldNOMEGP.setText("");
+		textFieldTEMAGP.setText("");
+		textFieldAREA.setText("");
+		textFieldSUBAREA.setText("");
+		textFieldDATA.setText("");
+		textFieldCOD.setText("");
+		TextAreaNomeAlunosGP.setText("");
+		textAreaRAGP.setText("");
 	}
 
 
